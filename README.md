@@ -85,9 +85,16 @@ Here's a step-by-step breakdown and the code to detect faces in an image or from
 1. Import OpenCV and Load the Cascade Classifier
    We start by loading the Haar Cascade XML file for face detection, which OpenCV provides. This will let us locate faces in images.
 
-2. Load an Image
+2. Capture the camera and get frames
 
 3. Detect Faces and Draw Bounding Boxes
    Using CascadeClassifier.detectMultiScale, we’ll detect faces and draw rectangles around them to visualize the detection.
+
+
+Note the class `FaceDetectionWithDisplay`. Remember to set the `java.library.path` as we did before:
+
+![Screenshot FaceDetectionWithDisplay.png](/readme_images/Screenshot%20FaceDetectionWithDisplay.png)
+
+Note the interval times and how long it takes for every operation.
 
 
